@@ -1,0 +1,37 @@
+body{
+    background-color: transparent;
+    
+}
+.containerHeader{
+   border: 2px black solid;
+   background-color: black;
+   border-radius: 50px;
+   width: 95%;
+   height: 60px;
+   margin-top: 2%;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   justify-content: space-around;
+
+   button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: poppins;    
+   }
+   .logo{
+    z-index: 10;
+    border: 2px #79BE00 solid;
+    background-color: #79BE00;
+    height: 50px;
+    width: 70px;
+    margin-top: 5px;
+    border-radius: 40px;
+    img{
+        width: 80%;
+    }
+   }
+}
+*{margin: 0; padding: 0;}
