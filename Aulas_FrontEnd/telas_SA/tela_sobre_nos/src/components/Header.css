@@ -1,16 +1,14 @@
-body{
-    background-color: transparent;
-    
-}
+
 .containerHeader{
+   position: absolute;
    border: 2px black solid;
    background-color: black;
+   opacity: 85%;
    border-radius: 50px;
    width: 95%;
    height: 60px;
-   margin-top: 2%;
-   margin-left: auto;
-   margin-right: auto;
+   margin-top: 1.5%;
+   margin-left: 2.5%;
    display: flex;
    justify-content: space-around;
 
