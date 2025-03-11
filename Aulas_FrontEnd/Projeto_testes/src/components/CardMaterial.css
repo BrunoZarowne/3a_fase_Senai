@@ -1,0 +1,7 @@
+.container-card{
+    border: 2px white solid;
+    border-radius: 10px;
+    max-width: 200px;
+    height: 80px;
+    padding: 5px;
+}

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Tela1 from './components/Tela1'
+import Materiais from './pages/Materiais'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,7 +8,8 @@ function App() {
   return (
     <>
       <div>
-        <Tela1 />
+        {/* <Crud /> */}
+        <Materiais />
       </div>
     </>
   )
