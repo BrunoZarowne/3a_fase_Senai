@@ -1,5 +1,5 @@
 {
-  "name": "tela_sobre_nos",
+  "name": "testes",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "motion": "^12.5.0",
+    "bootstrap": "^5.3.3",
     "react": "^19.0.0",
+    "react-bootstrap-carousel": "^4.1.1",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
