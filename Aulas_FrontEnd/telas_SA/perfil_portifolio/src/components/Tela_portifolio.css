@@ -1,0 +1,21 @@
+.container_telaPortifolio{
+    /* border: 2px red solid; */
+    .infosUsuario{
+        border: 2px #FFD9D9 solid;
+        border-radius: 55px;
+        position: absolute;
+        top: 20%;
+        left: 4.5%;
+        width: 90%;
+        height: 50%;
+       background-color: #FFD9D9;
+    }
+    .logoSkillNetVerde{
+        /* border: 2px red solid; */
+        position: absolute;
+        top: 0.5%;
+        right: 0.5%;
+    }
+}
+
+*{margin: 0; padding: 0;}

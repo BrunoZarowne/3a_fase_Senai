@@ -1,5 +1,5 @@
 {
-  "name": "testes",
+  "name": "peril_portifolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "dropdown": "^0.2.0",
     "react": "^19.0.0",
-    "react-bootstrap-carousel": "^4.1.1",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
