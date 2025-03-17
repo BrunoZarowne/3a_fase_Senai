@@ -4,11 +4,11 @@ function DropdownButton() {
   return (
     <div className='containerDropdown'>
       <ul className="dropdownButton">
-        <li>Sobre Nós</li>
-        <li>Perfil</li>
-        <li>Home</li>
-        <li>portifólios</li>
-        <li>Serviços</li>
+        <button>Sobre Nós</button>
+        <button>Perfil</button>
+        <button>Home</button>
+        <button>portifólios</button>
+        <button>Serviços</button>
       </ul>
     </div>
   )
