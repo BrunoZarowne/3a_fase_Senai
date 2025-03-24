@@ -38,6 +38,7 @@ function Tela_portifolio() {
 
       <div className="partePortifolio">
         <p className='txtPortifolio'>Portifólio</p>
+        <div className="barra1"></div>
       </div>
       {
         openProfile && <DropdownButton />
