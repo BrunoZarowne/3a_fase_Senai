@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+body{
+    background-color: #FBFBFB;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Parte superior da tela portifolio */
+
 .container_telaPortifolio{
     .infosUsuario{
         border: 2px #FFD9D9 solid;
@@ -91,7 +101,7 @@
                     top: 2px;
                 }
                 .contrateButton{
-                    border: 2px black solid;
+                    border: 2.5px black solid;
                     background-color: transparent;
                     border-radius: 30px;
                     width: 150px;
@@ -125,9 +135,21 @@
                 }
             }
         }
+        .bttcont1{
+            border: none;
+            background-color: transparent;
+        }
+        .bttcont2{
+            border: none;
+            background-color: transparent;
+        }
+        .bttcont3{
+            border: none;
+            background-color: transparent;
+        }
     }
     .partePortifolio{
-        border: 2px red solid;
+        /* border: 2px red solid; */
         position: relative;
         top: 350px;
         .txtPortifolio{
@@ -145,6 +167,35 @@
             background-color: #FFAFAF;
         }
         
+    }
+
+/* Parte superior da tela portifolio */
+
+    .infosPortifolio{
+        border: 2px red solid;
+        margin-top: 5%;
+        width: 100%;
+        height: fit-content;
+        .txtDescPortfolio{
+            /* border: 2px green solid; */
+            position: relative;
+            top: 5%;
+            left: 8%;
+            font-size: 48px;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 800;
+            color: #B80093;
+        }
+        .descricaoPortifolio{
+            border: 2px red solid;
+            width: 75%;
+            margin-left: 8%;
+            margin-top: 5%;
+            word-break: break-all;
+            font-size: 32px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+        }
     }
 }
 

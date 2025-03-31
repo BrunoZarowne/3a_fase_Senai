@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <div>
-        {/* <Tela_portifolio /> */}
-        <Teste />
+        <Tela_portifolio />
+        {/* <Teste /> */}
       </div>
     </>
   )
