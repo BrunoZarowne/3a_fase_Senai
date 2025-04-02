@@ -41,9 +41,7 @@ function Teste() {
       >
         {imagensPort.map((item) => (
           <SwiperSlide  key={item.id}>
-            {/* <div className="swiper-button-prev swiper-button-disabled"></div> */}
               <img className="imgsPortifolio" src={item.img} alt="" />
-            {/* <div className="swiper-button-next swiper-button-disabled"></div> */}
           </SwiperSlide>
         ))}
 

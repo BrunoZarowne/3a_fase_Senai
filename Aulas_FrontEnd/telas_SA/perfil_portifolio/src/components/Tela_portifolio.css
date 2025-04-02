@@ -17,15 +17,15 @@ body{
         border-radius: 55px;
         position: absolute;
         top: 20%;
-        left: 4.5%;
-        width: 90%;
+        left: 9%;
+        width: 80%;
         height: 55%;
        background-color: #FFD9D9;
     }
     .logoSkillNetVerde{
         position: absolute;
-        top: 0.5%;
-        right: 0.5%;
+        top: 2%;
+        right: 2%;
     }
     .infosUsuario{
         /* border: 2px red solid; */
@@ -148,6 +148,9 @@ body{
             background-color: transparent;
         }
     }
+
+
+
     .partePortifolio{
         /* border: 2px red solid; */
         position: relative;
@@ -172,8 +175,9 @@ body{
 /* Parte superior da tela portifolio */
 
     .infosPortifolio{
-        border: 2px red solid;
+        /* border: 2px red solid; */
         margin-top: 5%;
+        margin-left: 4%;
         width: 100%;
         height: fit-content;
         .txtDescPortfolio{
@@ -187,7 +191,7 @@ body{
             color: #B80093;
         }
         .descricaoPortifolio{
-            border: 2px red solid;
+            /* border: 2px red solid; */
             width: 75%;
             margin-left: 8%;
             margin-top: 5%;
