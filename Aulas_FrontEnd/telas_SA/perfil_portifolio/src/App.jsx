@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Tela_portifolio from './components/Tela_portifolio'
-import Teste from './components/Teste'
+import Testes from './components/Testes'
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
       <div>
         <Tela_portifolio />
-        {/* <Teste /> */}
+        {/* <Testes /> */}
       </div>
     </>
   )

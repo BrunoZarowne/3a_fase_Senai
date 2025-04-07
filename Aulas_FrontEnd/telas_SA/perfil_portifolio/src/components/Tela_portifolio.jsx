@@ -1,11 +1,30 @@
 import { useState } from 'react'
-import DropdownButton from './DropdownButton'
 import './Tela_portifolio.css'
-import Teste from './Teste'
+import DropdownButton from './DropdownButton'
+import CarouselPortifolio from './CarouselPortifolio'
 
 function Tela_portifolio() {
 
   const [openProfile, setOpenProfile] = useState(false)
+
+  const [img, setImg] = useState('')
+    const [fileName, setFileName] = useState('')
+
+    const handleImageChange  = (e) => {
+    const file = e.target.files[0]
+    if(file) {
+        setFileName('')
+
+        const reader = new FileReader()
+         reader.onloadend = () => {
+            setImg(reader.result)
+        }
+        reader.readAsDataURL(file)
+    }else{
+        setFileName('')
+    }
+    
+    }
   return (
     <div className='container_telaPortifolio'>
       <div className='container_telaSuperiorUsu'>
@@ -30,8 +49,10 @@ function Tela_portifolio() {
                     <button className='bttcont3' onClick={() => alert('a')}>
                       <img src="./icon_mail.svg" alt="" />
                     </button>
-                    <button className='shareButton' onClick={() => alert('a')}>share</button>
-                    <img className='icon_share' src="./icon_share.svg" alt="" />
+                    <button className='shareButton' onClick={() => alert('a')}>
+                      share
+                      <img className='icon_share' src="./icon_share.svg" alt="" />
+                    </button>
                     <button className='contrateButton' onClick={() => alert('a')}>contrate</button>
                   </div>
                 <p className='experience'>Experiencia: </p>
@@ -54,7 +75,15 @@ function Tela_portifolio() {
           }
       </div>
 
-        <Teste/>
+        <CarouselPortifolio/>
+        <label htmlFor="uploadInput">Escolher imagem</label>
+        <input id='uploadInput'
+        className='adcImgPort'
+        type='file'
+        accept="image/*"
+        onChange={handleImageChange}
+        style={{ display: "none" }}
+        />
 
       <div className='infosPortifolio'>
           <label className='txtDescPortfolio'>Portifólio1</label>

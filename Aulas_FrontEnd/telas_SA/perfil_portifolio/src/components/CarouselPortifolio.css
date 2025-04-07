@@ -1,0 +1,21 @@
+.carouselPort{
+    /* border: 2px red solid;    */
+    margin-top: 25%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 0 0.75rem gray);
+}
+.imgsPortifolio{
+    border-radius: 20px;
+    width: 90%;
+    height: 600px;
+    margin-left: 5%;
+}
+
+.swiper-button-prev::after {
+   margin-left: 0px;
+}
+.swiper-button-next::after {
+    margin-right: 0px;
+}
