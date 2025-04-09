@@ -23,16 +23,13 @@ export const GlobalContextProvider = ({children}) => {
         
     ])
 
-    let numero = 5
-
     return(
         <GlobalContext.Provider value={{
             usuarioLogado,
             setUsuarioLogado,
             idadeUsuario,
             imagensPort,
-            setImagensPort,
-            numero
+            setImagensPort
             }}>
             {children}
         </GlobalContext.Provider>

@@ -5,6 +5,9 @@ function App() {
 
   return (
     <>
+    {/* <GlobalContextProvider>
+      <App />
+    </GlobalContextProvider>   */}
     </>
   )
 }

@@ -2,7 +2,7 @@ import './DropdownButton.css'
 
 function DropdownButton() {
   return (
-    <div>
+    <div className='containerDropdown'>
       <ul className="dropdownButton">
         <button>Sobre Nós</button>
         <button>Perfil</button>

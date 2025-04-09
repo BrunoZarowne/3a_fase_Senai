@@ -8,23 +8,23 @@ function Tela_portifolio() {
     const [openProfile, setOpenProfile] = useState(false)
 
     const [img, setImg] = useState('')
-    const [fileName, setFileName] = useState('')
+    // const [fileName, setFileName] = useState('')
 
-    const handleImageChange  = (e) => {
-    const file = e.target.files[0]
-    if(file) {
-        setFileName('')
+    // const handleImageChange  = (e) => {
+    // const file = e.target.files[0]
+    // if(file) {
+    //     setFileName('')
 
-        const reader = new FileReader()
-         reader.onloadend = () => {
-            setImg(reader.result)
-        }
-        reader.readAsDataURL(file)
-    }else{
-        setFileName('')
-    }
+    //     const reader = new FileReader()
+    //      reader.onloadend = () => {
+    //         setImg(reader.result)
+    //     }
+    //     reader.readAsDataURL(file)
+    // }else{
+    //     setFileName('')
+    // }
     
-    }
+    // }
   return (
     <div className='container_telaPortifolio'>
     <div className='container_telaSuperiorUsu'>
@@ -74,17 +74,16 @@ function Tela_portifolio() {
           openProfile && <DropdownButton />
         }
     </div>
-
-      {/* <CarouselPortifolio /> */}
-      
-      <label htmlFor="uploadInput">Escolher imagem</label>
+     
+      {/* <label className='adcImgPort' htmlFor="uploadInput">Escolher imagem</label>
       <input id='uploadInput'
-      className='adcImgPort'
       type='file'
       accept="image/*"
       onChange={handleImageChange}
       style={{ display: "none" }}
-      />
+      /> */}
+
+      <CarouselPortifolio />
 
     <div className='infosPortifolio'>
         <label className='txtDescPortfolio'>Portifólio1</label>

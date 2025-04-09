@@ -11,7 +11,6 @@ createRoot(document.getElementById('root')).render(
   <GlobalContextProvider>
     <RouterProvider router={router}>
     </RouterProvider>
-    <CarouselPortifolio/>
   </GlobalContextProvider>
 )
 
