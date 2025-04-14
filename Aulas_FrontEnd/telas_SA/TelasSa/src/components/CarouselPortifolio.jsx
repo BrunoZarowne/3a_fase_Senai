@@ -1,4 +1,4 @@
-import { useState, useContext } from "react"
+import { useState, useContext, useEffect } from "react"
 import { GlobalContext } from "../contexts/GlobalContext"
 import { Navigation } from "swiper/modules"
 import { Swiper,SwiperSlide } from "swiper/react"
@@ -45,6 +45,38 @@ function CarouselPortifolio() {
     function fecharModal() {
       setIsOpen(false)
     }
+    
+
+    
+    function excluirImg(event) {
+      const idDelImgPort = Number(event.currentTarget.getAttribute('data-iddelimglivro'))
+      
+      setImagensPort((prevImgs) => prevImgs.filter((img) => img.id !== idDelImgPort));
+      
+      imagensPort.splice(idDelImgPort, idDelImgPort)
+
+      // console.log(imagensPort)
+    }
+
+    const [modalEditIsOpen, setEditIsOpen] = useState(false)
+    function abrirModalEdit() {
+      setEditIsOpen(true)
+    }
+    function fecharModalEdit() {
+      setEditIsOpen(false)
+    }
+    
+    function editarImg(event) {
+      const idImgPort = event.currentTarget.getAttribute('data-idimglivro')
+      
+
+      abrirModalEdit()
+    }
+    useEffect(() => {
+      console.log("Imagens atualizadas:", imagensPort);
+    }, [imagensPort]);
+
+
   return (
     <div className="carouselPort">
       <Swiper
@@ -64,32 +96,88 @@ function CarouselPortifolio() {
         ))}
 
       </Swiper><br /><br />
-
-      <button
-      className="ButtonEditarImgs"
-      onClick={abrirModal}
-      >Adicionar</button>
-      
+      <div className="editDeleteButton">
+        <button
+        className="ButtonEditarImgs"
+        onClick={abrirModal}
+        ><label className="txtButtonEdtExc">Adicionar/Editar</label>
+        <img className="imgButtonEdtExc" src="./icon_lapis.svg"/>
+        </button>
+      </div>
       <Modal
       className="ModalEdt/Exc/Adc"
       isOpen={modalIsOpen}
       onRequestClose={fecharModal}
+      ariaHideApp={false}
       >
         <div className="containerModalPort">
+          <button className="buttonFecharModal" onClick={fecharModal}>X</button>
           <label className="txtModalUm">Qual imagen deseja editar ou excluir?</label>
           <div className="barra1"></div>
 
+      <Swiper
+      modules={[Navigation]}
+      spaceBetween={10}
+      slidesPerView={1}
+      pagination={{ clickable: true}}
+      navigation
+      loop
+      autoplay={{
+        stopOnLastSlide: false,
+      }}
+      className="swiperModal">
+        {imagensPort.map((item) =>(
+          <SwiperSlide key={item.id}>
+            <img className="imgsPortifolioModal" src={item.img} alt="" />
+            <div className="buttonsEdit_Exc">
+              <button 
+              className="editarImg"
+              onClick={editarImg}
+              data-idimglivro={item.id}
+              >
+                <img src="./edit_icon.svg" alt="" />
+              </button>
+              <button 
+              className="excluirImg"
+              onClick={excluirImg}
+              data-iddelimglivro={item.id}
+              >
+                <img src="./trash_icon.svg" alt="" />
+              </button>
+            </div>
+          </SwiperSlide>
+          
+        ))}
+
+      </Swiper>
+
         </div>
       </Modal>
+      
+      <Modal
+      className="modalEditImg"
+      isOpen={modalEditIsOpen}
+      onRequestClose={fecharModalEdit}
+      ariaHideApp={false}
+      >
+      <label className="txtModalEdit">Deseja alterar para qual imagem?</label><br />
 
-      {/* <label className='adcImgPort' htmlFor="uploadInput">Escolher imagem</label>
+      <img className="selectImg" src={img} alt="" /><br />
+
+      <label className='escolherImg' htmlFor="uploadInput">Escolher imagem</label>
       <input id='uploadInput'
       type='file'
       accept="image/*"
       onChange={handleImageChange}
       style={{ display: "none" }}
-      /> */}
+      />
+      <div className="buttonsConf">
+        <button className="buttonAlterar">Alterar</button>
+        <button className="buttonCancelar">Cancelar</button>
+      </div>
+      </Modal>
 
+      
 
     </div>
   )

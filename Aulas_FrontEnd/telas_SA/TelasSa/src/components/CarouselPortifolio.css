@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .carouselPort{
-    /* border: 2px red solid;    */
+    /* border: 2px red solid; */
     margin-top: 25%;
     width: 85%;
     margin-left: auto;
@@ -10,34 +10,53 @@
 }
 .imgsPortifolio{
     border-radius: 20px;
-    width: 90%;
+    width: 85%;
     height: 600px;
-    margin-left: 5%;
+    margin-left: 7.5%;
 }
 
+
 .swiper-button-prev::after {
-   margin-left: 0px;
+    border-radius: 50px;
+    margin-left: 0px;
+    color: black;    
 }
 .swiper-button-next::after {
     margin-right: 0px;
+    color: black;    
 }
-.adcImgPort{
-    border: 2px #B80093 solid;
-    border-radius: 20px;
-    font-size: 50px;
-    padding: 10px;
-    position: relative;
-    left: 80%;
-    
-}
+
 .inputImg{
     border: 2px red solid;
     height: 500px;
 }
+.editDeleteButton{
+    margin-left: 90%;
+    display: flexbox;
+    justify-content: space-around;
+    .ButtonEditarImgs{
+        border: 2px #B80093 solid;
+        border-radius: 30px;
+        background-color: #B80093;
+        width: 230px;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 5px;
+    }
+    .txtButtonEdtExc{
+        position: relative;
+        bottom: 13px;
+        right: 0px;
+    }
+    .imgButtonEdtExc{
+        position: relative;
+        left: 10px;
+    }
+}
 .containerModalPort{
     border: 2px black solid;
     border-radius: 30px;
-    width: 70%;
+    width: 60%;
     height: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -58,5 +77,74 @@
         margin-top: 2%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .buttonFecharModal{
+        border: 2px black solid;
+        border-radius: 50px;
+        font-size: 40px;
+        height: 50px;
+        width: 50px;
+        background-color: #fbfbfb;
+        position: relative;
+        left: 74%;
+        top: 3%;
+    }
+    .swiperModal{
+        /* border: 2px red solid; */
+        width: 90%;
+    }
+    .imgsPortifolioModal{
+        width: 70%;
+        height: 400px;
+        margin-top: 7%;
+        border-radius: 20px;
+    }
+    .buttonsEdit_Exc{
+        border: 2px #FFD9D9 solid;
+        border-radius: 30px;
+        background-color: #FFD9D9;
+        height: 45px;
+        width: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        button{
+            border: none;
+            background-color: #FFD9D9;
+            height: fit-content;
+            width: fit-content;
+            margin-top: 8%;
+        }
+    }
+}
+.modalEditImg{
+    border: 2px red solid;
+    width: 35%;
+    height: 55%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    .txtModalEdit{
+        font-size: 25px;
+    }
+    .selectImg{
+        border: 2px red solid;
+        width: 500px;
+        height: 300px;
+        margin-top: 5%;
+    }
+    .escolherImg{
+        border: 2px red solid;
+          
+    }
+}
+.buttonsConf{
+    border: 2px red solid;
+    .buttonAlterar{
+        border: 2px red solid;
+    }
+    .buttonCancelar{
+        border: 2px red solid;
     }
 }

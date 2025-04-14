@@ -20,6 +20,18 @@ export const GlobalContextProvider = ({children}) => {
             id: 3,
             img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRICJntjQCYdSblUDurLcUCtrbei788JC3Q&s'
         },
+        {
+            id: 4,
+            img: 'https://preview.redd.it/meu-gato-%C3%A9-praticamente-o-gato-do-meme-v0-n9dleoj8dgfc1.jpg?width=640&crop=smart&auto=webp&s=52de2578fe227e639db822d551bba33c6d28a2f1'
+        },
+        {
+            id: 5,
+            img: 'https://pt.quizur.com/_image?href=https://img.quizur.com/f/img648efbd5b00b28.10275519.jpg?lastEdited=1687092187&w=600&h=600&f=webp'
+        },
+        {
+            id: 6,
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRICJntjQCYdSblUDurLcUCtrbei788JC3Q&s'
+        },
         
     ])
 
