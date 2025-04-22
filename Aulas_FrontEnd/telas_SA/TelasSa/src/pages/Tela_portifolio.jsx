@@ -7,11 +7,14 @@ function Tela_portifolio() {
 
     const [openProfile, setOpenProfile] = useState(false)
 
+
   return (
     <div className='container_telaPortifolio'>
     <div className='container_telaSuperiorUsu'>
       <div className="container_infosUsuario">
-        <img src="./img1.png" alt="" />
+        <img className='imgFundo' src="./img1.png" alt="" />
+        <p className='txtPortifolio'>Portifólio</p>
+        <div className="barra1"></div>
         <img onClick={() => setOpenProfile((prev) => !prev)} className='logoSkillNetVerde' src="./logo_SkillNetVerde.svg" alt="" />
           <div className="infosUsuario">
             <div className="img_local">
@@ -47,10 +50,10 @@ function Tela_portifolio() {
           </div>
       </div>
 
-      <div className="partePortifolio">
+      {/* <div className="partePortifolio">
         <p className='txtPortifolio'>Portifólio</p>
         <div className="barra1"></div>
-      </div>
+      </div> */}
 
         {
           openProfile && <DropdownButton />
@@ -66,6 +69,18 @@ function Tela_portifolio() {
             ideias em soluções criativas e inovadoras. Ao longo da minha carreira, sempre busquei superar expectativas, oferecendo 
             resultados de alta qualidade e personalizados para cada projeto.</p>
         </div>
+    </div>
+
+    <div className="imgFinalPagina">
+      <button>
+        <img className='img1' src="https://blog-static.petlove.com.br/wp-content/uploads/2021/10/gato-sumiu-Petlove.jpg" alt="" />
+      </button>
+      <button>
+        <img className='img2' src="https://i.pinimg.com/736x/be/67/20/be6720a9737812145f56d565533cacca.jpg" alt="" />
+      </button>
+      <button>
+        <img className='img3' src="https://conteudo.imguol.com.br/c/noticias/c8/2020/11/05/mulher-segura-gatinho-filhote-gato-celular-smartphone-1604580767340_v2_3x4.jpg" alt="" />
+      </button>
     </div>
     
   </div>

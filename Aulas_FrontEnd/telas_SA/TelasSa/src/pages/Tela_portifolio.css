@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
     background-color: #FBFBFB;
@@ -16,11 +17,34 @@ body{
         border: 2px #FFD9D9 solid;
         border-radius: 55px;
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: 9%;
         width: 80%;
-        height: 55%;
+        height: 57%;
        background-color: #FFD9D9;
+    }
+    .txtPortifolio{
+        position: absolute;
+        top: 10%;
+        left: 43%;
+        font-size: 60px;
+        color: white;
+        font-weight: 800;
+        filter: drop-shadow(10px 10px 0.25rem rgb(0, 0, 0, 0.35));
+        font-family: "Montserrat", sans-serif;
+    }
+    .barra1{
+        border: 2px #FFAFAF solid;
+        background-color: #FFAFAF;
+        border-radius: 20px;
+        position: absolute;
+        top: 19%;
+        left: 48.5%;
+        width: 5%;
+        height: 10px;
+    }
+    .imgFundo{
+        width: 100%;
     }
     .logoSkillNetVerde{
         position: absolute;
@@ -39,13 +63,13 @@ body{
             flex-direction: column;
             .imgUsuario{
                 margin-left: 8%;
-                width: 300px;
-                height: 300px;
+                width: 350px;
+                height: 350px;
                 border-radius: 50%;
             }
             .iconLocal{
                 margin-top: 1%;
-                margin-left: 10%;
+                margin-left: 17%;
                 width: 45px;
                 height: 45px;
                 display: flex;
@@ -57,14 +81,14 @@ body{
                 font-weight: 500;
                 position: relative;
                 bottom: 40px;
-                left: 18%;
+                left: 25%;
             }
         }
         .restoInfos{
             /* border: 2px red solid; */
             margin-top: 5%;
             position: relative;
-            right: 5%;
+            right: 0%;
             width: 60%;
             height: 80%;
             .nomeUsu{
@@ -180,14 +204,6 @@ body{
             font-family: "Nunito Sans", sans-serif;
             font-weight: 600;
         }
-        .barra1{
-            /* border: 2px black solid; */
-            margin-left: auto;
-            margin-right: auto;
-            width: 150px;
-            height: 15px;
-            background-color: #FFAFAF;
-        }
         
     }
 
@@ -220,6 +236,23 @@ body{
             font-size: 32px;
             font-family: "Poppins", sans-serif;
             font-weight: 300;
+        }
+    }
+
+    .imgFinalPagina{
+        border: 2px red solid;
+        margin-top: 5%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+        img{
+            width: 450px;
+            height: 700px;
+            border-radius: 50px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
